@@ -3,6 +3,7 @@ from playfair import playfairCipher
 print("Choose a cipher:\n1) Caesar cipher\n2)Playfair cipher")
 opt = input("->")
 if opt == '1':
+    print("This is monoalphabetic substitution cipher where the given text's alphabet is shifted a given number of positions.")
     print("Choose an option:\n1)Encrypt text\n2)Decrypt text")
     opt = input("->")
     if opt == '1':
@@ -19,4 +20,3 @@ else:
     text = input("Enter text:")
     key = input("ENter the key (string):")
     print(f"result:{playfairCipher(text,key)}")
-    

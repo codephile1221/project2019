@@ -15,6 +15,7 @@ if opt == '1':
         key = int(input("Enter the key (Enter 0 for bruteforce/if key is unknown):"))
         print(decrypt(text,key))
 else:
+    print("Playfair cipher is a manual symmetric encryption technique and was the first literal digram substitution cipher.")
     print("Choose an option:\n1)Encrypt text\n2)Decrypt text")
     opt = input("->")
     text = input("Enter text:")

@@ -9,10 +9,6 @@ def encrypt(text,key):
         else:
             enText += chr((ord(ch) - 65 + key)% 26 + 65)
     return enText
-     
-# text = input("Enter the text you want to encrypt:").upper()
-# k = int(input("Enter the key:"))
-# print(encrypt(text,k))
 
 def decrypt(enText,key = 0):
     enText = enText.upper()
@@ -41,6 +37,4 @@ def decrypt(enText,key = 0):
         return decrypteds
 
 
-# print(decrypt("HMNHPJS RZYYTS GJJK", 5))
-    
-
+ 
